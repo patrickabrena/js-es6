@@ -388,7 +388,14 @@ Use Class Syntax to Define Constructor Function
 
 const constructorFuncEx = () => {
   //Explicit Constructor
+  //consstructor() takes in a parameter (targetPlanet)
+  //targetPlanet is stored in this.targetPlanet
+  //takeOff() is a function that is also a method that is tacked onto the variable that we initialized with a new SpaceShuttle Class
   class SpaceShuttle {
+    //class SpaceShuttle is defined. it has a constructor and a method
+    //this class has a constructor func that takes in the parameter - targetPlanet
+    //assigns it to the instance variable "this.targetPlanet"
+    //takeOff() is the method of SpaceShuttle class
     constructor(targetPlanet) {
       this.targetPlanet = targetPlanet;
     }
@@ -403,10 +410,11 @@ const constructorFuncEx = () => {
       console.log("To the Moon!");
     }
   }
-
+  //An instance of the SpaceShuttle claass named zeus is created with "Jupiter" as it's argument
   const zeus = new SpaceShuttle("Jupiter");
   //prints to "To Jupiter !" in console
   zeus.takeOff();
+  //the takeOff method is called and console logs the message "To Jupiter!"
 
   const atlas = new Rocket();
   //prints "To the moon!" in console
